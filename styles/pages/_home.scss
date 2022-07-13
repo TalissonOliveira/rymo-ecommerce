@@ -23,3 +23,17 @@
     }
   }
 }
+
+#brands {
+  .content {
+    @include container();
+
+    display: flex;
+    padding-block: 3rem;
+
+    img {
+      padding-inline: .9375rem;
+      max-width: 16.666667%;
+    }
+  }
+}

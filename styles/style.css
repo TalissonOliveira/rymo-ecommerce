@@ -130,6 +130,20 @@ header {
   margin-bottom: 1rem;
 }
 
+#brands .content {
+  box-sizing: initial;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-inline: 0.9375rem;
+  display: flex;
+  padding-block: 3rem;
+}
+#brands .content img {
+  padding-inline: 0.9375rem;
+  max-width: 16.666667%;
+}
+
 ul {
   list-style: none;
 }/*# sourceMappingURL=style.css.map */
