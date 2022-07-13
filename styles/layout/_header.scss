@@ -1,0 +1,50 @@
+header {
+  background-color: $white;
+  width: 100%;
+  padding-block: 1rem;
+
+  position: fixed;
+
+  z-index: 100;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+}
+
+.navbar {
+  @include container();
+
+  display: flex;
+  justify-content: space-between;
+  height: 3.75rem;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-inline: 1.25rem;
+
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $orange-500;
+    }
+  }
+
+  i {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-inline: .4375rem;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    &:hover {
+      color: $orange-500;
+    }
+  }
+}
