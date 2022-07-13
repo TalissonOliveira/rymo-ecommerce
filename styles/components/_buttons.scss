@@ -1,0 +1,12 @@
+.primary-button {
+  background-color: $dark-800;
+  color: $white;
+  display: inline-block;
+  padding: 13px 30px;
+
+  transition: background .3s;
+
+  &:hover {
+    background-color: $dark-700;
+  }
+}

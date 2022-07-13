@@ -1,0 +1,25 @@
+#home {
+  background-image: url(../../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top 60px center;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  .content {
+    @include container();
+
+    h1 span {
+      color: $orange-500;
+    }
+
+    p {
+      max-width: 23rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
