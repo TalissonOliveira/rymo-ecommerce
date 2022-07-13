@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #212529;
+}
+
+h1, h2, h3, h4, p {
+  color: #212529;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+h6 {
+  color: #d8d8d8;
+}
+
+a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.primary-button {
+  background-color: #1d1d1d;
+  color: white;
+  display: inline-block;
+  padding: 13px 30px;
+  transition: background 0.3s;
+}
+.primary-button:hover {
+  background-color: #353535;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  padding-block: 1rem;
+  position: fixed;
+  z-index: 100;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  box-sizing: initial;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-inline: 0.9375rem;
+  display: flex;
+  justify-content: space-between;
+  height: 3.75rem;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-list .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  padding-inline: 1.25rem;
+  transition: color 0.3s ease;
+}
+.nav-list .nav-link:hover {
+  color: #ff7f50;
+}
+.nav-list i {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-inline: 0.4375rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.nav-list i:hover {
+  color: #ff7f50;
+}
+
+#home {
+  background-image: url(../../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top 60px center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#home .content {
+  box-sizing: initial;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-inline: 0.9375rem;
+}
+#home .content h1 span {
+  color: #ff7f50;
+}
+#home .content p {
+  max-width: 23rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+}/*# sourceMappingURL=style.css.map */
