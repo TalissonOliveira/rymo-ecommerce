@@ -3,6 +3,7 @@
   color: $white;
   display: inline-block;
   padding: .8125rem 1.875rem;
+  border: none;
 
   text-transform: uppercase;
 
@@ -14,11 +15,31 @@
   }
 }
 
+.secondary-button {
+  background-color: $orange-500;
+  color: $white;
+  display: inline-block;
+  padding: .8125rem 1.875rem;
+  border: none;
+
+  font-size: .875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  transition: background .3s;
+
+  &:hover {
+    background-color: $orange-450;
+  }
+}
+
 .button-bottom-outline {
   background-color: transparent;
   color: $dark-750;
   display: inline-block;
   padding:  .1563rem;
+  border: none;
   border-bottom: 2px solid $dark-750;
 
   font-size: 14px;

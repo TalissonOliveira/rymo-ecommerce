@@ -5,3 +5,11 @@
   margin: 0 auto;
   padding-inline: .9375rem;
 }
+
+@mixin container-fluid {
+  display: flex;
+  max-width: 1366px;
+  width: 100%;
+  padding-inline: .9375rem;
+  margin-inline: auto;
+}

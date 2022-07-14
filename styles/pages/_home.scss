@@ -85,3 +85,63 @@
     }
   }
 }
+
+#featured {
+  margin-block: 3rem;
+
+  .products {
+    @include container-fluid();
+    flex-wrap: wrap;
+
+    .product-card {
+      text-align: center;
+      padding-inline: .9375rem;
+      flex: 0 0 25%;
+      max-width: 25%;
+      margin-bottom: 2rem;
+
+      img {
+        max-width: 100%;
+        height: auto;
+
+        transition: opacity 0.3s;
+      }
+
+      .stars {
+        padding-block: 10px;
+      }
+      
+      .stars i {
+        color: $yellow-500;
+        font-size: .8rem;
+      }
+
+      &-name {
+        color: $text-dark;
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+
+      &-price {
+        color: $text-dark;
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+
+      &:hover img {
+        opacity: 0.7;
+      }
+
+      &:hover button {
+        transform: translateY(10px);
+        opacity: 1;
+      }
+
+      button {
+        transform: translateY(30px);
+        transition: transform .3s, opacity .3s, background .3s;
+        opacity: 0;
+      }
+    }
+  }
+}
