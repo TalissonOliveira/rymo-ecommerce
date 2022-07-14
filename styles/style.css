@@ -52,11 +52,30 @@ a {
   background-color: #1d1d1d;
   color: white;
   display: inline-block;
-  padding: 13px 30px;
+  padding: 0.8125rem 1.875rem;
+  text-transform: uppercase;
+  cursor: pointer;
   transition: background 0.3s;
 }
 .primary-button:hover {
   background-color: #353535;
+}
+
+.button-bottom-outline {
+  background-color: transparent;
+  color: #2a2a2a;
+  display: inline-block;
+  padding: 0.1563rem;
+  border-bottom: 2px solid #2a2a2a;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+.button-bottom-outline:hover {
+  color: white;
+  border-color: white;
 }
 
 header {
@@ -142,6 +161,44 @@ header {
 #brands .content img {
   padding-inline: 0.9375rem;
   max-width: 16.666667%;
+}
+
+#new {
+  display: flex;
+}
+#new .new-card {
+  max-width: 33.333333%;
+  flex: 0 0 33.333333%;
+  position: relative;
+}
+#new .new-card img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+#new .new-card:nth-child(1) .new-card-details {
+  align-items: flex-start;
+}
+#new .new-card:nth-child(3) .new-card-details {
+  align-items: flex-end;
+}
+#new .new-card:hover .new-card-details {
+  background-color: rgba(245, 178, 178, 0.7);
+}
+#new .new-card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  transition: background 0.3s ease;
+}
+#new .new-card-details a {
+  transform: translateY(70px);
 }
 
 ul {
