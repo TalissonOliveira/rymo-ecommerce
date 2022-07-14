@@ -145,3 +145,37 @@
     }
   }
 }
+
+#banner {
+  background-image: url(./../../img/banner/parallax.jpg);
+  background-size: cover;
+  background-position: top 70px center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100%;
+  padding-block: 3rem;
+  margin-block: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  .content {
+    @include container();
+
+    h4 {
+      color: $gray-100;
+      margin-bottom: .5rem;
+    }
+
+    h2 {
+      color: $white;
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 3rem;
+      margin-bottom: .5rem;
+    }
+  }
+}

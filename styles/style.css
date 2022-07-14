@@ -297,6 +297,40 @@ header {
   opacity: 0;
 }
 
+#banner {
+  background-image: url(./../../img/banner/parallax.jpg);
+  background-size: cover;
+  background-position: top 70px center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100%;
+  padding-block: 3rem;
+  margin-block: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#banner .content {
+  box-sizing: initial;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-inline: 0.9375rem;
+}
+#banner .content h4 {
+  color: #d8d8d8;
+  margin-bottom: 0.5rem;
+}
+#banner .content h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
 ul {
   list-style: none;
 }/*# sourceMappingURL=style.css.map */
