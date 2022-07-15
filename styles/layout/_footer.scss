@@ -1,0 +1,127 @@
+footer {
+  background-color: $dark-800;
+  padding-block: 3rem;
+
+  .content {
+    @include container();
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 3rem;
+
+    h5 {
+      color: $white;
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    > div {
+      padding-inline: .9375rem;
+    }
+
+    .footer-about {
+      p {
+        color: $gray-200;
+        font-size: .875rem;
+        font-weight: 300;
+        padding-block: .5rem;
+      }
+
+      a {
+        color: $orange-500;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .footer-featured, .footer-contact {
+      li {
+        color: $white;
+        opacity: 0.9;
+        text-transform: uppercase;
+
+        p {
+          text-transform: initial;
+        }
+      }
+  
+      a {
+        display: inline-block;
+        color: $gray-200;
+        font-weight: 300;
+        line-height: 1.8rem;
+
+        transition: color .2s;
+
+        &:hover {
+          color: $orange-500;
+          text-decoration: underline;
+        }
+      }
+
+      p {
+        color: $gray-200;
+        font-size: .875rem;
+        font-weight: 300;
+        margin-bottom: .5rem;
+      }
+    }
+
+    .footer-instagram .instagram-pictures {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      img {
+        width: 25%;
+      }
+    }
+  }
+
+  .copyright {
+    @include container();
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 3rem;
+
+    img {
+      padding-inline: .9375rem;
+    }
+
+    p {
+      color: $gray-200;
+      font-weight: 300;
+    }
+
+    a {
+      background-color: $white;
+      color: $text-dark;
+      display: inline-block;
+
+      font-size: 1rem;
+      text-align: center;
+      line-height: 38px;
+
+      width: 38px;
+      height: 38px;
+      margin-inline: .3125rem;
+      border-radius: 50%;
+
+      font-family: "Segoe UI";
+
+      transition: background 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: $orange-500;
+        color: $white;
+      }
+    }
+  }
+}
