@@ -286,10 +286,10 @@ header {
   transform: translateY(70px);
 }
 
-#featured, #clothes, #watches {
+#featured, #clothes, #watches, #shoes {
   margin-block: 3rem;
 }
-#featured .products, #clothes .products, #watches .products {
+#featured .products, #clothes .products, #watches .products, #shoes .products {
   display: flex;
   max-width: 1366px;
   width: 100%;
