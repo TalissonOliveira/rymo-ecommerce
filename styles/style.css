@@ -100,6 +100,48 @@ a {
   border-color: white;
 }
 
+.product-card {
+  text-align: center;
+  padding-inline: 0.9375rem;
+  flex: 0 0 25%;
+  max-width: 25%;
+  margin-bottom: 2rem;
+}
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.3s;
+}
+.product-card .stars {
+  padding-block: 10px;
+}
+.product-card .stars i {
+  color: #ffc941;
+  font-size: 0.8rem;
+}
+.product-card-name {
+  color: #212529;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.product-card-price {
+  color: #212529;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.product-card:hover img {
+  opacity: 0.7;
+}
+.product-card:hover button {
+  transform: translateY(10px);
+  opacity: 1;
+}
+.product-card button {
+  transform: translateY(30px);
+  transition: transform 0.3s, opacity 0.3s, background 0.3s;
+  opacity: 0;
+}
+
 header {
   background-color: white;
   width: 100%;
@@ -244,57 +286,16 @@ header {
   transform: translateY(70px);
 }
 
-#featured {
+#featured, #clothes {
   margin-block: 3rem;
 }
-#featured .products {
+#featured .products, #clothes .products {
   display: flex;
   max-width: 1366px;
   width: 100%;
   padding-inline: 0.9375rem;
   margin-inline: auto;
   flex-wrap: wrap;
-}
-#featured .products .product-card {
-  text-align: center;
-  padding-inline: 0.9375rem;
-  flex: 0 0 25%;
-  max-width: 25%;
-  margin-bottom: 2rem;
-}
-#featured .products .product-card img {
-  max-width: 100%;
-  height: auto;
-  transition: opacity 0.3s;
-}
-#featured .products .product-card .stars {
-  padding-block: 10px;
-}
-#featured .products .product-card .stars i {
-  color: #ffc941;
-  font-size: 0.8rem;
-}
-#featured .products .product-card-name {
-  color: #212529;
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-#featured .products .product-card-price {
-  color: #212529;
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-#featured .products .product-card:hover img {
-  opacity: 0.7;
-}
-#featured .products .product-card:hover button {
-  transform: translateY(10px);
-  opacity: 1;
-}
-#featured .products .product-card button {
-  transform: translateY(30px);
-  transition: transform 0.3s, opacity 0.3s, background 0.3s;
-  opacity: 0;
 }
 
 #banner {
