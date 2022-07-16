@@ -1,0 +1,54 @@
+#products {
+  margin-block: 3rem;
+  padding-block: 3rem;
+
+  .heading {
+    text-align: left;
+
+    hr {
+      margin-inline: 0; 
+    }
+  }
+
+  .products {
+    @include container();
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .pagination {
+    @include container();
+
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3rem;
+
+    li {
+      a {
+        display: inline-block;
+        padding: .3rem .8rem;
+        border: 1px solid #dee2e6;
+
+        transition: all .3s ease;
+
+        & + a {
+          border-left: 0;
+        }
+
+        &.active {
+          color: $white;
+          background-color: $dark-800;
+          cursor: initial;
+          border-color: $dark-800;
+        }
+
+        &:not(.active):hover {
+          color: white;
+          background-color: $orange-500;
+          border-color: $orange-500;
+        }
+      }
+    }
+  }
+}

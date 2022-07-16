@@ -109,7 +109,10 @@ a {
 }
 .product-card img {
   max-width: 100%;
+  width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: opacity 0.3s;
 }
 .product-card .stars {
@@ -147,6 +150,9 @@ header {
   width: 100%;
   padding-block: 1rem;
   position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   z-index: 100;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -439,6 +445,56 @@ footer .copyright a:hover {
   font-weight: 700;
   line-height: 3rem;
   margin-bottom: 0.5rem;
+}
+
+#products {
+  margin-block: 3rem;
+  padding-block: 3rem;
+}
+#products .heading {
+  text-align: left;
+}
+#products .heading hr {
+  margin-inline: 0;
+}
+#products .products {
+  box-sizing: initial;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-inline: 0.9375rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+#products .pagination {
+  box-sizing: initial;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-inline: 0.9375rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}
+#products .pagination li a {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #dee2e6;
+  transition: all 0.3s ease;
+}
+#products .pagination li a + a {
+  border-left: 0;
+}
+#products .pagination li a.active {
+  color: white;
+  background-color: #1d1d1d;
+  cursor: initial;
+  border-color: #1d1d1d;
+}
+#products .pagination li a:not(.active):hover {
+  color: white;
+  background-color: #ff7f50;
+  border-color: #ff7f50;
 }
 
 ul {
