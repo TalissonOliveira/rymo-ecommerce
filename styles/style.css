@@ -176,6 +176,9 @@ header {
 .nav-list .nav-link:hover {
   color: #ff7f50;
 }
+.nav-list .nav-link.active {
+  color: #ff7f50;
+}
 .nav-list i {
   font-size: 1.2rem;
   font-weight: 500;

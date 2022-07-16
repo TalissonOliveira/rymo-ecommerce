@@ -32,6 +32,10 @@ header {
     &:hover {
       color: $orange-500;
     }
+
+    &.active {
+      color: $orange-500;
+    }
   }
 
   i {
